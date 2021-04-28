@@ -12,6 +12,7 @@ body{
   padding: 10px;
   background: linear-gradient(135deg, #71e6cd, #59b67d);
 }
+
 .container{
   max-width: 700px;
   width: 100%;
@@ -20,9 +21,10 @@ body{
   border-radius: 5px;
 }
 .container .title{
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 500;
-  position: relative;
+  text-align: center;
+
 }
 
 .content form .user-details{
