@@ -4,61 +4,88 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
    </head>
-<body>
-  <div class="container">
-    <div class="title">Registration Form</div>
-    <div class="content">
-      <form action="#">
-        <div class="user-details">
-          <div class="input-box">
-            <span class="details">Full Name</span>
-            <input type="text" placeholder="Enter your name" required>
+<body >
+<div class="maincontainer">
+  <div class="w-50 m-auto bg-white rounded acon">
+    <div class="container ">
+      <h1 class="h2 text-center ">REGISTRATION FORM</h1>
+      <form>
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" id="fn"  name="fn" class="form-control input" required>
+            </div>
           </div>
-          <div class="input-box">
-            <span class="details">Username</span>
-            <input type="text" placeholder="Enter your username" required>
+          <div class="col-lg-6 col-md-12 col-md-6">
+            <div class="form-group">
+              <label>User Name</label>
+              <input type="text" id="un"  class="form-control input" required>
+            </div>
           </div>
-          <div class="input-box">
-            <span class="details">Email</span>
-            <input type="text" placeholder="Enter your email" required>
+          <div class="col-lg-6 col-md-12 col-md-6">
+            <div class="form-group">
+              <label>Email:</label>
+              <input type="email" id="em"  class="form-control input" required="true">
+            </div>
           </div>
-          <div class="input-box">
-            <span class="details">Phone Number</span>
-            <input type="text" placeholder="Enter your number" required>
+          <div class="col-lg-6 col-md-12 col-md-6">
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="number" id="pn"  class="form-control input" required>
+            </div>
           </div>
-          <div class="input-box">
-            <span class="details">Password</span>
-            <input type="text" placeholder="Enter your password" required>
+          <div class="col-lg-6 col-md-12 col-md-6">
+            <div class="form-group">
+              <label>Password</label>
+              <input  id="pw" class="form-control input" required>
+            </div>
           </div>
-          <div class="input-box">
-            <span class="details">Confirm Password</span>
-            <input type="text" placeholder="Confirm your password" required>
+          <div class="col-lg-6 col-md-12 col-md-6">
+            <div class="form-group">
+              <label>Confirm Password</label>
+              <input  id="cp" class="form-control input" required >
+            </div>
           </div>
         </div>
-        <div class="gender-details">
-          
-          <span class="gender-title">Gender:</span>
-          <div class="gender">
-          <input type="radio" id="male" name="gender" value="male">
-          <label for="male">Male</label>
+          <div class="col-md-12">
+            <div class="form-group">
+              <div class="row">
+                <div class="col-md-3">
+                  <label>Gender</label>
+                </div>
+                <div class="col-md-3">
+                  <div class="d-flex">
+                    <div class="mr-1"><input type="radio" name="gender" class="input" ></div>
+                    <div><label>Male</label></div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="d-flex">
+                    <div class="mr-1"><input type="radio" name="gender" class="input" ></div>
+                    <div>
+                      <label>Female</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="d-flex">
+                    <div class="mr-1"><input type="radio" name="gender" class="input" ></div>
+                    <div><label>Other</label></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="gender">
-          <input type="radio" id="female" name="gender" value="female">
-          <label for="female">Female</label>
-          </div>
-          <div class="gender">
-          <input type="radio" id="other" name="gender" value="other">
-          <label for="other">Other</label>
-          </div>
-          
-        </div>
-        <div class="button">
-          <input type="submit" value="Register">
+          <div class="text-center">
+          <button  type="submit" onclick="confirm()"  class="btn  register">Register</button>
         </div>
       </form>
+      </div>
     </div>
   </div>
-
+  <script src="/script.js"></script>
 </body>
 </html>
